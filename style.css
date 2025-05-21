@@ -1,12 +1,12 @@
-name {
+.name {
     font: bold 16px Arial, sans-serif;
     color: #333;
     text-align: center;
     margin: 20px;
 }
-sidebar {
+.sidebar {
     font: italic 14px Arial, Verdana;
-    color: yellow;
+    color: blue;
     text-align: left;
     margin: 10px;
 }
