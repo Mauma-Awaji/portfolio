@@ -4,3 +4,9 @@ name {
     text-align: center;
     margin: 20px;
 }
+sidebar {
+    font: italic 14px Arial, Verdana;
+    color: yellow;
+    text-align: left;
+    margin: 10px;
+}
