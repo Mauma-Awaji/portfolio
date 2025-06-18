@@ -1,5 +1,7 @@
+import Dropdown from "./Dropdown";
 export function Skills() {
-  return (
+  const title = "Skills";
+  const content = (
     <>
       {" "}
       <h2 className="text-xl font-semibold mt-6">Skills</h2>
@@ -12,6 +14,12 @@ export function Skills() {
         <li>Python</li>
         <li>C#</li>
       </ul>
+    </>
+  );
+
+  return (
+    <>
+      <Dropdown title={title} content={content} />
     </>
   );
 }

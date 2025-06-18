@@ -1,9 +1,8 @@
+import Dropdown from "./Dropdown";
 export default function Education() {
-  return (
+  const title = "Education and Certifications";
+  const content = (
     <>
-      <h2 className="text-xl font-semibold mb-2">
-        Education and Certifications
-      </h2>
       <p className="text-lg">
         Cybersecurity - Bachelor of Applied Science in Information Technology
         Ensign College January 2025 - Present
@@ -18,6 +17,11 @@ export default function Education() {
           Idaho
         </li>
       </ul>
+    </>
+  );
+  return (
+    <>
+      <Dropdown title={title} content={content} />
     </>
   );
 }

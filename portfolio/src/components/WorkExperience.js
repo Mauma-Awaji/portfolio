@@ -1,10 +1,11 @@
+import Dropdown from "./Dropdown";
 export default function WorkExperience() {
-  return (
+  const title = "Work Experience";
+  const content = (
     <>
       {/*-- Work Experience */}
-      <h1 className="text-3xl font-semibold mb-4">Work Experience</h1>
+
       <div>
-        {" "}
         <p className="text-lg underline">
           Phones Specialist August 2024 - December 2024 Brigham Young University
           - Idaho Rexburg, Idaho
@@ -45,6 +46,11 @@ export default function WorkExperience() {
           </li>
         </ul>
       </div>
+    </>
+  );
+  return (
+    <>
+      <Dropdown title={title} content={content} />
     </>
   );
 }
