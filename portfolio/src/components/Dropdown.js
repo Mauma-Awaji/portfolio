@@ -5,13 +5,13 @@ export default function Dropdown({ title, content }) {
 
   return (
     <>
-      <button
-        className="dropdown-btn"
-        onClick={() => setIsOpen((drop) => !drop)}
-      >
-        <h1 className="text-3xl font-semibold mb-4">{title}</h1>
-      </button>
-      {isOpen && content}
+      <div>
+        {" "}
+        <button onClick={() => setIsOpen((drop) => !drop)}>
+          <h1 className="text-xl font-semibold">{title}</h1>
+        </button>
+        {isOpen && content}
+      </div>
     </>
   );
 }
