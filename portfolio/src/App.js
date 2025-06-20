@@ -1,19 +1,25 @@
 // import "./App.css";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Resume from "./pages/Resume";
+import Contact from "./pages/Contact";
+import PageLayout from "./components/PageLayout";
 
 function App() {
   return (
-    <div className="bg-gray-100 text-gray-800 flex flex-col md:min-h-screen">
-      {/*-- Header from Header.js */}
-      <Header />
-
-      <Main />
-
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        {/* The PageLayout component wraps the main content of the app */}
+        {/* It includes the Header and Footer components, and uses Outlet to render nested routes */}
+        {/* All other routes/pages are children of Layout and contain its features which are Header and Footer */}
+        <Route element={<PageLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contactme" element={<Contact />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 

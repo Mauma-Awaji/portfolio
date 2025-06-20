@@ -1,19 +1,8 @@
-import About from "./About";
-import Projects from "./Projects";
-import WorkExperience from "./WorkExperience";
-import Contact from "./Contact";
-import Education from "./Education";
-import { Skills } from "./Skills";
+import About from "../components/About";
 
-export default function Main() {
+export default function Home() {
   return (
     <main className="flex justify-between flex-grow">
-      {/* Left column */}
-      <section className="w-1/4 p-6 bg-white shadow-md rounded">
-        <Projects />
-        <WorkExperience />
-      </section>
-
       {/*-- Middle column */}
       <div className="flex-grow bg-gradient-to-b from-red-700 to-blue-500 text-white text-center p-16 shadow-lg">
         <About />
@@ -24,7 +13,6 @@ export default function Main() {
             className="mt-6 rounded shadow-md"
           />
         </div>
-        <Contact />
       </div>
 
       {/*-- Right column */}
@@ -34,8 +22,6 @@ export default function Main() {
           alt="My profile picture"
           className="mt-4 rounded-full shadow-md"
         />
-        <Education />
-        <Skills />
       </aside>
     </main>
   );
