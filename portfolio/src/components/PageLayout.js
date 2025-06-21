@@ -9,7 +9,7 @@ export default function PageLayout() {
       {" "}
       {/*-- Header from Header.js */}
       <Header />
-      <main className="flex flex-col min-h-screen bg-gray-50">
+      <main className="flex flex-col min-h-screen text-purple-950 bg-yellow-50 dark:bg-purple-950 dark:text-yellow-50">
         <Outlet />
       </main>
       <Footer />

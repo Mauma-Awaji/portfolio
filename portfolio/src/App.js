@@ -3,7 +3,7 @@ import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
 import Resume from "./pages/Resume";
-import Contact from "./pages/Contact";
+import ContactPage from "./pages/ContactPage";
 import PageLayout from "./components/PageLayout";
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
         <Route element={<PageLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/contactme" element={<Contact />} />
+          <Route path="/contactme" element={<ContactPage />} />
         </Route>
       </Routes>
     </Router>

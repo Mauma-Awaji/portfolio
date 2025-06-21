@@ -29,14 +29,18 @@ export default function Projects() {
                     {project.name === "Pokemon Website" && (
                       <>
                         <p>Here is a link to the the website </p>
-                        <a
-                          href="https://mauma-awaji.github.io/wdd_130/xybattles/index.html"
-                          className="text-blue-500 underline"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          View Website
-                        </a>
+
+                        <button className="bg-purple-900 dark:bg-lime-50 text-yellow-50 dark:text-purple-900 p-2 rounded-md hover:bg-purple-800 hover:scale-110 hover:box-shadow-lg transition-all duration-300">
+                          <a
+                            href="https://mauma-awaji.github.io/wdd_130/xybattles/index.html"
+                            className=""
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {" "}
+                            View Website
+                          </a>
+                        </button>
                       </>
                     )}
                   </p>

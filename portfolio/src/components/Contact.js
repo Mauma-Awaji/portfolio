@@ -30,8 +30,7 @@ export default function Contact({
 
   return (
     <>
-      <section>
-        <h2>Contact Me</h2>
+      <div>
         <form
           className="text-gray-700"
           onSubmit={handleSubmit}
@@ -62,15 +61,15 @@ export default function Contact({
           ></textarea>
           <button
             type="submit"
-            className="bg-blue-500 text-white p-2 rounded"
+            className="bg-purple-900 dark:bg-lime-50 text-yellow-50 dark:text-purple-900 p-2 rounded-md hover:bg-purple-800 hover:scale-110 hover:box-shadow-lg transition-all duration-300"
             disabled={busy}
           >
             {busy ? "Sending..." : "Send"}
           </button>
         </form>
         {/*-- Form message that will be attached to a js event*/}
-        <p>{message}</p>
-      </section>
+        <p className="text-center">{message}</p>
+      </div>
     </>
   );
 }
