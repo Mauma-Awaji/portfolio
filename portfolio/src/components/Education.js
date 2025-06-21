@@ -1,4 +1,5 @@
 import Dropdown from "./Dropdown";
+import { DropdownBig } from "./Dropdown";
 export default function Education() {
   const title = "Education and Certifications";
   const certifications = [
@@ -32,7 +33,7 @@ export default function Education() {
   );
   return (
     <>
-      <Dropdown title={title} content={content} />
+      <DropdownBig title={title} content={content} />
     </>
   );
 }

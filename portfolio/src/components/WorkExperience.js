@@ -1,4 +1,5 @@
 import Dropdown from "./Dropdown";
+import { DropdownBig } from "./Dropdown";
 export default function WorkExperience() {
   const title = "Work Experience";
   // array of work experiences as objects
@@ -35,7 +36,7 @@ export default function WorkExperience() {
             <li>
               <Dropdown
                 title={
-                  <p className="text-lg underline">
+                  <p className="text-lg">
                     {experience.title} {experience.startDate} -{" "}
                     {experience.endDate} {experience.company} -{" "}
                     {experience.location}
@@ -57,5 +58,5 @@ export default function WorkExperience() {
       ))}
     </>
   );
-  return <Dropdown title={title} content={content} />;
+  return <DropdownBig title={title} content={content} />;
 }

@@ -1,4 +1,5 @@
 import Dropdown from "./Dropdown";
+import { DropdownBig } from "./Dropdown";
 export default function Projects() {
   const title = "Projects";
   const projects = [
@@ -23,20 +24,22 @@ export default function Projects() {
               title={<p className="text-lg">{project.name}</p>}
               content={
                 <>
-                  <p className="list-disc pl-5">{project.description}</p>
-                  {project.name === "Pokemon Website" && (
-                    <>
-                      <p>Here is a link to the the website</p>
-                      <a
-                        href="https://mauma-awaji.github.io/wdd_130/xybattles/index.html"
-                        className="text-blue-500 underline"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        View Website
-                      </a>
-                    </>
-                  )}
+                  <p className="list-disc pl-5">
+                    {project.description}{" "}
+                    {project.name === "Pokemon Website" && (
+                      <>
+                        <p>Here is a link to the the website </p>
+                        <a
+                          href="https://mauma-awaji.github.io/wdd_130/xybattles/index.html"
+                          className="text-blue-500 underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          View Website
+                        </a>
+                      </>
+                    )}
+                  </p>
                 </>
               }
             />
@@ -45,5 +48,5 @@ export default function Projects() {
       ))}
     </>
   );
-  return <Dropdown title={title} content={content} />;
+  return <DropdownBig title={title} content={content} />;
 }

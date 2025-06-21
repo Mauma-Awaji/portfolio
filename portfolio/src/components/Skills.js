@@ -1,4 +1,5 @@
 import Dropdown from "./Dropdown";
+import { DropdownBig } from "./Dropdown";
 export function Skills() {
   const title = "Skills";
   const skills = [
@@ -24,7 +25,7 @@ export function Skills() {
 
   return (
     <>
-      <Dropdown title={title} content={content} />
+      <DropdownBig title={title} content={content} />
     </>
   );
 }

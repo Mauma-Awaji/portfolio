@@ -6,10 +6,13 @@ import { Skills } from "../components/Skills";
 export default function Resume() {
   return (
     <>
-      <Projects />
-      <WorkExperience />
-      <Education />
-      <Skills />
+      <div className="mx-24 mt-12 flex flex-col justify-start min-h-screen">
+        {" "}
+        <Projects />
+        <WorkExperience />
+        <Education />
+        <Skills />
+      </div>
     </>
   );
 }
