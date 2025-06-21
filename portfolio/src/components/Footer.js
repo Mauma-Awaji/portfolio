@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <>
       {" "}
-      <footer className="text-center p-4 bg-gray-900 text-white">
+      <footer className="flex justify-center space-x-6 p-2 bg-gray-900 text-white md:p-4">
         <p>&copy; 2023 Manny Sobere</p>
         <a
           href="https://www.linkedin.com/in/manasseh-sobere-a63a42239/"
@@ -12,7 +12,7 @@ export default function Footer() {
           <img
             src="https://img.icons8.com/color/48/linkedin.png"
             alt="LinkedIn"
-            className="inline-block w-6 h-6 mr-2"
+            className="w-6 h-6"
           />
         </a>
       </footer>

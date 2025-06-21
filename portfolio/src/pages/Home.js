@@ -2,27 +2,16 @@ import About from "../components/About";
 
 export default function Home() {
   return (
-    <main className="flex justify-between flex-grow">
-      {/*-- Middle column */}
-      <div className="flex-grow bg-gradient-to-b from-red-700 to-blue-500 text-white text-center p-16 shadow-lg">
-        <About />
-        <div>
-          <img
-            src="https://via.placeholder.com/300"
-            alt="Something cool and computer related"
-            className="mt-6 rounded shadow-md"
-          />
-        </div>
-      </div>
-
-      {/*-- Right column */}
-      <aside className="w-1/4 p-6 bg-gray-200 shadow-md rounded ml-auto">
+    <div className="flex justify-center space-x-32 bg-purple-900 text-yellow-50 text-center min-h-screen">
+      <About />
+      <div className="flex flex-col p-8 justify-start ml-6">
+        {" "}
         <img
-          src="/images/profile.jpg"
-          alt="My profile picture"
-          className="mt-4 rounded-full shadow-md"
+          className="w-80 h-80 rounded-full"
+          src="../../images/profile.jpg"
+          alt="Manny Sobere"
         />
-      </aside>
-    </main>
+      </div>
+    </div>
   );
 }
