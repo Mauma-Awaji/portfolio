@@ -1,0 +1,26 @@
+body {
+    background-color: #FFDFD3;
+    font-size: 30px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+.subhead{
+    font-size: 50px;
+}
+
+nav {
+    background-color: #957DAD;
+
+}
+
+a {
+    color: black;
+}
+
+footer {
+    
+}
